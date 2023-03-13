@@ -1,0 +1,13 @@
+2. awk sed and grep command
+
+#!/bin/bash                                                                     
+# This script demonstrates the usage of awk, sed, and grep.                     
+                                                  
+echo "Lines containing the word 'example':"
+grep 'example' input.txt
+     
+echo "The second field of each line:"
+awk '{ print $2 }' input.txt
+
+echo "Replacing 'example' with 'replacement':"
+sed 's/example/replacement/g' input.txt > output.txt
